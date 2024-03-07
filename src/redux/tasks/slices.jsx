@@ -1,6 +1,6 @@
-import { statusFilters } from '../redux/constants';
+import { statusFilters } from './constants';
  import {createSlice, isAnyOf } from '@reduxjs/toolkit';
-import { fetchTasks, addTasks, deleteTasks, toggleCompleted } from './operetions';
+import { fetchTasks, addTasks, deleteTasks, toggleCompleted } from './operations';
 
 
  const filtersSlice = createSlice({
