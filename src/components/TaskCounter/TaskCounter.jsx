@@ -1,4 +1,4 @@
-import { getTasks } from "../../redux/selectors";
+import { getTasks } from "../../redux/tasks/selectors";
  import css from "./TaskCounter.module.css";
  import { useSelector } from "react-redux";
 

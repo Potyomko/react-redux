@@ -1,10 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Task } from "../Task/Task";
-import { statusFilters } from "../../redux/constants";
+import { statusFilters } from "../../redux/tasks/constants";
 import css from "./TaskList.module.css";
-import { getFiltersStatus, getTasks } from "../../redux/selectors";
+import { getFiltersStatus, getTasks } from "../../redux/tasks/selectors";
 import { useEffect } from "react";
-import { fetchTasks } from "../../redux/operetions";
+import { fetchTasks } from "../../redux/tasks/operations";
 
 export const TaskList = () => {
   const dispatch = useDispatch();
