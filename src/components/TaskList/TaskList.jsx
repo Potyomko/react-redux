@@ -24,7 +24,9 @@ export const TaskList = () => {
         default:
           return task;
       }
-})
+   })
+  console.log(visibleTasks);
+  console.log(tasks);
   return (
     <ul className={css.list}>
       {visibleTasks.map(task => (
