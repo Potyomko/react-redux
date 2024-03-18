@@ -3,7 +3,7 @@ import { Button } from "../Button/Button";
  import { statusFilters } from "../../redux/tasks/constants";
  import { useDispatch, useSelector } from "react-redux";
  import { setStatusFilter } from "../../redux/tasks/slices";
- import { getFiltersStatus } from "../../redux/tasks/selectors";
+ import { selectFiltersStatus } from "../../redux/tasks/selectors";
 
  export const StatusFilter = () => {
    const dispatch = useDispatch()
