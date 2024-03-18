@@ -7,7 +7,8 @@ import { useDeleteTaskMutation } from "../../redux/tasks/tasksApi";
  export const Task = ({ task }) => {
    const dispatch = useDispatch()
    const [deleteTask] = useDeleteTaskMutation();
-   const handleToggle =()=>dispatch(toggleCompleted(task));
+   const handleToggle = () => dispatch(toggleCompleted(task));
+   console.log(task);
    return (
      <div className={css.wrapper}>
        <input
