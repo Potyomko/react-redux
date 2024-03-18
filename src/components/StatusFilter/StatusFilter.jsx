@@ -7,7 +7,7 @@ import { Button } from "../Button/Button";
 
  export const StatusFilter = () => {
    const dispatch = useDispatch()
-   const filter = useSelector(getFiltersStatus)
+   const filter = useSelector(selectFiltersStatus)
    const handelChange=(filter)=>dispatch(setStatusFilter(filter))
    return (
      <div className={css.wrapper}>
